@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Aula 1 - Introdução ao DOM</h1>
+    <p>O Resultado vai aqui.</p>
+    <p>Aprendendo o DOM no JavaScript</p>
+    <div id="div1">Clique em mim</div>
+    <script>
+        var res = window.document.getElementsByTagName('p')[0];
+        window.document.write(res.innerText);
+        var d1 = window.document.getElementById('div1');
+        d1.innerText = 'Aguadando..';
+        d1.style.backgroundColor = 'blue';
+    </script>
+</body>
+</html>
