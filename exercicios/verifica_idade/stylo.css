@@ -1,0 +1,41 @@
+body {
+    background: rgb(45, 25, 112);
+    font: normal 15pt Arial;
+}
+header {
+    color: aliceblue;
+    font-size: 14pt;
+    text-align: center;
+}
+section {
+    width: 500px;
+    background-color: aliceblue;
+    color: rgb(151, 14, 126);
+    margin: auto;
+    border-radius: 20px;
+    padding: 15px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.598);
+}
+div#im{
+    text-align: center;
+
+}
+input#btn{
+    background-color: rgb(198, 35, 166);
+    border-radius:15px;
+    color: aliceblue;
+   
+}
+input#btn:hover{
+ background-color: rgb(198, 35, 166);
+ border-radius:15px;
+ border-color: rgb(238, 54, 137);
+}
+
+footer {
+    color: rgb(151, 14, 126);
+    font-size: 16pt;
+    text-align: center; 
+    font-style: italic;
+}
+
