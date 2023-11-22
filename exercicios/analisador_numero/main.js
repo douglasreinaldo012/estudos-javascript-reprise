@@ -1,9 +1,10 @@
 var numeros = [];
+var res2 = document.getElementById('res-div')
 function adicionar(){
     var num_adc = document.getElementById('numero_adc');
     var num_tran = Number(num_adc.value);
     var res = document.getElementById('sel-res')
-    
+    res2.innerHTML =` `;
     if(num_tran >= 1 && num_tran <= 100){
         if(numeros.includes(num_tran)==false){
             res.innerHTML = ` ` 
@@ -25,14 +26,16 @@ function finalizar(){
     var menor_valor = 0;
     var soma = 0;
     var media = numeros.length;
-    var res2 = document.getElementById('res-div')
 
-    for(i in numeros){
-        if(numeros[i] > maior_valor){
-            maior_valor = numeros[i];
-            soma = soma + numeros[i];
+    for(j in numeros){
+        if(numeros[j] > maior_valor){
+            maior_valor = numeros[j];
+            
         } else {
         }
+    }
+    for(k in numeros){
+        soma = soma + numeros[k];
     }
     menor_valor = maior_valor;
     media = soma / media;
