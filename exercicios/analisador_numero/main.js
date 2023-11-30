@@ -19,9 +19,13 @@ function adicionar(){
     }else{
         window.alert("Este valor não é válido para analise!confira se está entre 1 e 100")
     }
-    
+    num_adc.value = ''
+    num_adc.focus()
 }
 function finalizar(){
+    if(numeros.length == 0){
+        window.alert("Adicione valores antes de finalizar")
+    }else{
     var maior_valor = 0;
     var menor_valor = 0;
     var soma = 0;
@@ -51,4 +55,5 @@ function finalizar(){
     <p>O menor valor foi ${menor_valor}</p>
     <p>A soma dos valores : ${soma}</p>
     <p>A media dos valores : ${media}</p>`;
+}
 }
